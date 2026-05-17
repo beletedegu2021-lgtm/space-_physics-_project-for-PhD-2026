@@ -1,0 +1,227 @@
+# -----------
+# AMDA INFO :
+# -----------
+# AMDA_ABOUT : Created by AMDA
+# AMDA_VERSION : 3.13.0
+# AMDA_ACKNOWLEDGEMENT : Thank you for acknowledging the use of AMDA in publications with wording like 'Data analysis was performed with the AMDA science analysis system provided by the Centre de Données de la Physique des Plasmas (CDPP) supported by CNRS, CNES, Observatoire de Paris and Université de Toulouse'
+# AMDA_DOI : https://doi.org/10.6096/2011
+#
+# --------------
+# REQUEST INFO :
+# --------------
+# REQUEST_STRUCTURE : all-in-one-file-refparam
+# REQUEST_TIME_FORMAT : ISO 8601
+# REQUEST_OUTPUT_PARAMS : thd_n_i,thd_v_i,thd_v_i_tot,thd_t_i,thd_bs,thd_bs_gsm,thd_bs_tot
+#
+# --------------------
+# DERIVED PARAMETERS :
+# --------------------
+#
+# PARAMETER_ID : thd_v_i_tot_17445867786125280761
+# PARAMETER_NAME : thd_v_i_tot
+# PARAMETER_SHORT_NAME : ion |v|
+# PARAMETER_UNITS : km/s
+# PARAMETER_PROCESS_INFO : Resampling of 'thd_v_i_tot' under times list of 'thd_esa_l2i_Density'
+# PARAMETER_PROCESS_DESC : magnitude(thd_v_i)
+# PARAMETER_LINKED_PARAMS : thd_esa_l2i_Velocity,thd_v_i_tot
+#
+#
+# PARAMETER_ID : thd_v_i_tot
+# PARAMETER_NAME : thd_v_i_tot
+# PARAMETER_SHORT_NAME : ion |v|
+# PARAMETER_UNITS : km/s
+# PARAMETER_PROCESS_INFO : Derived parameter from expression 'magnitude($thd_esa_l2i_Velocity)'
+# PARAMETER_PROCESS_DESC : magnitude(thd_v_i)
+# PARAMETER_LINKED_PARAMS : thd_esa_l2i_Velocity
+#
+#
+# PARAMETER_ID : thd_fgm_s_Bmag_17445867786125280761
+# PARAMETER_NAME : thd_bs_tot
+# PARAMETER_SHORT_NAME : |b|
+# PARAMETER_UNITS : nT
+# PARAMETER_PROCESS_INFO : Resampling of 'thd_fgm_s_Bmag' under times list of 'thd_esa_l2i_Density'
+# PARAMETER_LINKED_PARAMS : thd_fgm_s_Bmag
+#
+#
+# PARAMETER_ID : thd_fgm_s_B_17445867786125280761
+# PARAMETER_NAME : thd_bs
+# PARAMETER_SHORT_NAME : b_gse
+# PARAMETER_UNITS : nT
+# PARAMETER_PROCESS_INFO : Resampling of 'thd_fgm_s_B' under times list of 'thd_esa_l2i_Density'
+# PARAMETER_LINKED_PARAMS : thd_fgm_s_B
+#
+#
+# PARAMETER_ID : thd_esa_l2i_Velocity_17445867786125280761
+# PARAMETER_NAME : thd_v_i
+# PARAMETER_SHORT_NAME : ion v_gse
+# PARAMETER_UNITS : km/s
+# PARAMETER_PROCESS_INFO : Resampling of 'thd_esa_l2i_Velocity' under times list of 'thd_esa_l2i_Density'
+# PARAMETER_LINKED_PARAMS : thd_esa_l2i_Velocity
+#
+#
+# PARAMETER_ID : thd_esa_l2i_Temperature_17445867786125280761
+# PARAMETER_NAME : thd_t_i
+# PARAMETER_SHORT_NAME : ion temperature
+# PARAMETER_UNITS : eV
+# PARAMETER_PROCESS_INFO : Resampling of 'thd_esa_l2i_Temperature' under times list of 'thd_esa_l2i_Density'
+# PARAMETER_LINKED_PARAMS : thd_esa_l2i_Temperature
+#
+#
+# PARAMETER_ID : thd_bs_gsm_17445867786125280761
+# PARAMETER_NAME : thd_bs_gsm
+# PARAMETER_SHORT_NAME : b_gsm
+# PARAMETER_UNITS : nT
+# PARAMETER_PROCESS_INFO : Resampling of 'thd_bs_gsm' under times list of 'thd_esa_l2i_Density'
+# PARAMETER_PROCESS_DESC : #framesTransformation($thd_fgm_s_B;GSE;GSM;false)
+# PARAMETER_LINKED_PARAMS : framesTransformation_1594126032014258648,thd_bs_gsm
+#
+#
+# PARAMETER_ID : thd_bs_gsm
+# PARAMETER_NAME : thd_bs_gsm
+# PARAMETER_SHORT_NAME : b_gsm
+# PARAMETER_UNITS : nT
+# PARAMETER_PROCESS_INFO : Derived parameter from expression '#framesTransformation($thd_fgm_s_B;GSE;GSM;false)'
+# PARAMETER_PROCESS_DESC : #framesTransformation($thd_fgm_s_B;GSE;GSM;false)
+# PARAMETER_LINKED_PARAMS : framesTransformation_1594126032014258648
+#
+#
+# PARAMETER_ID : framesTransformation_1594126032014258648
+# PARAMETER_NAME : thd_bs
+# PARAMETER_SHORT_NAME : b_gse
+# PARAMETER_UNITS : nT
+# PARAMETER_PROCESS_INFO : Single param process from 'thd_fgm_s_B'
+# PARAMETER_LINKED_PARAMS : thd_fgm_s_B
+#
+#
+# -----------------
+# BASE PARAMETERS :
+# -----------------
+#
+# MISSION_ID : ThemisD
+# MISSION_NAME : THEMIS-D
+# MISSION_DESCRIPTION : Explorer 88
+# MISSION_URL : http://themis.ssl.berkeley.edu/index.shtml
+#
+#   INSTRUMENT_ID : ThemisD_fgm
+#   INSTRUMENT_NAME : FGM
+#   INSTRUMENT_DESCRIPTION : Tri-axial Fluxgate Magnetometer
+#   INSTRUMENT_PI : spase://SMWG/Person/Vassilis.Angelopoulos
+#   INSTRUMENT_TYPE : Magnetometer
+#
+#     DATASET_ID : thd-fgm-s
+#     DATASET_NAME : 3 sec (spin)
+#     DATASET_SOURCE : CDPP/DDServer
+#     DATASET_GLOBAL_START : 2007-02-28T02:55:28.384
+#     DATASET_GLOBAL_STOP : 2026-05-03T18:30:04.278
+#     DATASET_MIN_SAMPLING : 3
+#     DATASET_MAX_SAMPLING : 3
+#     DATASET_ACKNOWLEDGEMENT : Thank you for acknowledging the use of AMDA in publications with wording like "Data analysis was performed with the AMDA science analysis system provided by the Centre de Données de la Physique des Plasmas (CDPP) supported by CNRS, CNES, Observatoire de Paris and Université Paul Sabatier, Toulouse". See the Rules of the road at https://amda.cdpp.eu/help/policy.html . Please acknowledge the Data Providers.
+#
+#       PARAMETER_ID : thd_bs_tot
+#       PARAMETER_NAME : thd_bs_tot
+#       PARAMETER_SHORT_NAME : |b|
+#       PARAMETER_UNITS : nT
+#       PARAMETER_TENSOR_ORDER : 0
+#       PARAMETER_FILL_VALUE : nan
+#       PARAMETER_UCD : phys.magField
+#
+#       PARAMETER_ID : thd_bs
+#       PARAMETER_NAME : thd_bs
+#       PARAMETER_SHORT_NAME : b_gse
+#       PARAMETER_COMPONENTS : bx,by,bz
+#       PARAMETER_UNITS : nT
+#       PARAMETER_COORDINATE_SYSTEM : GSE
+#       PARAMETER_TENSOR_ORDER : 1
+#       PARAMETER_FILL_VALUE : nan
+#       PARAMETER_UCD : phys.magField
+#
+#   INSTRUMENT_ID : ThemisD_esa
+#   INSTRUMENT_NAME : ESA
+#   INSTRUMENT_PI : spase://SMWG/Person/Charles.W.Carlson
+#   INSTRUMENT_TYPE : ElectrostaticAnalyser
+#
+#     DATASET_ID : thd-esa-l2i
+#     DATASET_NAME : ion full mode
+#     DATASET_SOURCE : CDPP/DDServer
+#     DATASET_GLOBAL_START : 2007-03-07T16:54:49.404
+#     DATASET_GLOBAL_STOP : 2026-05-03T20:53:41.621
+#     DATASET_MIN_SAMPLING : 96
+#     DATASET_MAX_SAMPLING : 551
+#     DATASET_ACKNOWLEDGEMENT : Thank you for acknowledging the use of AMDA in publications with wording like "Data analysis was performed with the AMDA science analysis system provided by the Centre de Données de la Physique des Plasmas (CDPP) supported by CNRS, CNES, Observatoire de Paris and Université Paul Sabatier, Toulouse". See the Rules of the road at https://amda.cdpp.eu/help/policy.html . Please acknowledge the Data Providers.
+#
+#       PARAMETER_ID : thd_n_i
+#       PARAMETER_NAME : thd_n_i
+#       PARAMETER_SHORT_NAME : ion density
+#       PARAMETER_UNITS : cm-3
+#       PARAMETER_TENSOR_ORDER : 0
+#       PARAMETER_FILL_VALUE : nan
+#       PARAMETER_UCD : phys.density;phys.atmol.ionStage
+#
+#       PARAMETER_ID : thd_v_i
+#       PARAMETER_NAME : thd_v_i
+#       PARAMETER_SHORT_NAME : ion v_gse
+#       PARAMETER_COMPONENTS : vx,vy,vz
+#       PARAMETER_UNITS : km/s
+#       PARAMETER_COORDINATE_SYSTEM : GSE
+#       PARAMETER_TENSOR_ORDER : 0
+#       PARAMETER_FILL_VALUE : nan
+#       PARAMETER_UCD : phys.veloc;phys.atmol.ionStage
+#
+#       PARAMETER_ID : thd_t_i
+#       PARAMETER_NAME : thd_t_i
+#       PARAMETER_SHORT_NAME : ion temperature
+#       PARAMETER_COMPONENTS : t_para,t_perp1,t_perp2
+#       PARAMETER_UNITS : eV
+#       PARAMETER_TENSOR_ORDER : 0
+#       PARAMETER_FILL_VALUE : nan
+#       PARAMETER_UCD : phys.temperature;phys.atmol.ionStage
+#
+#
+# ---------------
+# INTERVAL INFO :
+# ---------------
+# INTERVAL_START : 2007-07-26T16:00:00.000
+# INTERVAL_STOP : 2007-07-26T17:00:00.000
+#
+# ------
+# DATA :
+# ------
+# DATA_COLUMNS : Time UT, thd_n_i, thd_esa_l2i_Velocity_17445867786125280761[0], thd_esa_l2i_Velocity_17445867786125280761[1], thd_esa_l2i_Velocity_17445867786125280761[2], thd_v_i_tot_17445867786125280761, thd_esa_l2i_Temperature_17445867786125280761[0], thd_esa_l2i_Temperature_17445867786125280761[1], thd_esa_l2i_Temperature_17445867786125280761[2], thd_fgm_s_B_17445867786125280761[0], thd_fgm_s_B_17445867786125280761[1], thd_fgm_s_B_17445867786125280761[2], thd_bs_gsm_17445867786125280761[0], thd_bs_gsm_17445867786125280761[1], thd_bs_gsm_17445867786125280761[2], thd_fgm_s_Bmag_17445867786125280761
+#
+2007-07-26T16:00:50.760     26.1042     -304.323     -13.6873     11.2372     304.837     9.40341     17.6295     48.1269     -0.98352        -2.49       -7.174      -0.9835      -4.3798      -6.2039       7.8163
+2007-07-26T16:02:26.933     26.8084     -301.113     -25.4713     10.4097     302.368     8.60003     17.6882     41.2785        1.527      -5.3478      -5.6107        1.527      -6.6877      -3.9191       8.0082
+2007-07-26T16:04:03.104     27.1128     -302.486     -23.549     11.1603     303.606     8.95243     17.2288     42.6803       2.2155      -6.3518      -4.3678       2.2155      -7.3065      -2.4573       8.0328
+2007-07-26T16:05:39.276     28.2421     -300.283     -25.0755     11.6574     301.553     8.7887     16.1964     41.2185       2.5941      -6.1654      -3.7097       2.5941      -6.9443      -1.8852       7.6649
+2007-07-26T16:07:15.447     26.8891     -301.857     -16.9907     11.721     302.562     8.67725     16.6773     45.5648        4.126      -7.8448     -0.38358        4.126      -7.6539       1.7628       8.9296
+2007-07-26T16:08:51.618     29.0592     -300.606     -23.9317     11.5269     301.777     9.41933     16.6946     42.1741        3.343      -7.3165     -0.92919        3.343      -7.2951       1.0841       8.1139
+2007-07-26T16:10:27.790     29.9774     -300.895     -17.469     10.3704     301.58     8.49096     17.9997     45.373       3.1337      -6.4545      -2.4524       3.1337       -6.876     -0.62479       7.8195
+2007-07-26T16:12:03.963     30.0635     -300.541     -21.2887     11.8911     301.528     8.51952     16.1568     43.2582       3.2589      -6.5728      0.66219       3.2589       -6.156       2.3981       7.8931
+2007-07-26T16:13:40.134     29.27     -302.406     -24.8338     12.431     303.678     9.76945     15.8291     41.8152       3.2872      -7.8423       3.5121       3.2872      -6.6233       5.4748       9.3326
+2007-07-26T16:15:16.305     31.1242     -307.44     2.10336     13.6349     307.75     11.0028     15.8675     51.7704      -1.5972      -1.5594      -6.4666      -1.5972      -3.2168      -5.8202         10.1
+2007-07-26T16:16:52.477     27.7529     -307.202     -3.80669     13.0215     307.502     9.69451     16.1188     50.821      -5.0889       5.6774      -9.2976      -5.0889       3.0234      -10.466       12.071
+2007-07-26T16:18:28.648     29.2722     -310.193     13.474     13.3677     310.773     9.7316     16.6413     51.3993      -2.2459      0.93712      -11.538      -2.2458      -2.1242       -11.38       12.341
+2007-07-26T16:20:04.821     28.4323     -309.033     -8.9142     12.6646     309.421     10.59     16.6509     50.5284      -3.6106       4.8354      -10.601      -3.6106       1.8986      -11.495       13.069
+2007-07-26T16:21:40.993     27.5436     -310.895     -22.4776     12.0802     311.941     10.5695     17.5083     45.5424      -4.2423       10.475       -6.978      -4.2422       8.3019        -9.46       13.302
+2007-07-26T16:23:17.164     27.7504     -312.55     -27.5671     11.2057     313.964     11.572     18.6035     43.0403      -3.0759       8.5136      -8.8748      -3.0759       5.9312      -10.775       13.519
+2007-07-26T16:24:53.335     24.6851     -311.959     1.15106     13.3447     312.247     11.1424     16.675     53.0606       -2.652     -0.54207      -15.019       -2.652      -4.3857      -14.374       15.267
+2007-07-26T16:26:29.507     19.2344     -313.54     14.4932     14.0441     314.189     10.6483     16.3419     52.5497      -2.8473        1.336      -14.652      -2.8473      -2.4564      -14.506       15.057
+2007-07-26T16:28:05.678     23.874     -326.683     37.9271     1.0616     328.879     49.3981     38.2167     22.1917      -3.4827       10.096       3.0652      -3.4828       10.543      0.39606       12.245
+2007-07-26T16:29:41.851     91.4308     -99.6233     91.2869     -45.1173     142.456     168.853     205.735     123.288      -7.8239       34.966       7.3199      -7.8239       35.679      -1.7666       37.629
+2007-07-26T16:31:18.023     101.75     -99.1374     75.1626     -16.9691     125.561     165.031     176.709     130.122      0.11037       15.253        30.73      0.11031       22.497       25.901       34.888
+2007-07-26T16:32:54.194     89.922     -95.2943     91.8021     -43.7839     139.376     182.965     176.393     132.785     -0.72495       21.416       28.661     -0.72501       27.912       22.386       38.605
+2007-07-26T16:34:30.365     96.1303     -120.245     64.3544     -29.358     139.507     174.876     173.723     131.56       3.7139      -9.2375       23.629       3.7138      -3.0607       25.182       31.573
+2007-07-26T16:36:06.538     80.58     -98.7448     67.1074     -32.4501     123.721     189.015     199.127     151.442        5.277      -29.739      -12.148        5.277      -31.821      -4.4055       35.614
+2007-07-26T16:37:42.709     104.539     -117.735     47.5506     -0.237172     126.975     187.991     206.548     127.973     -0.33774      -15.504      -29.022     -0.33768      -22.176      -24.307       33.767
+2007-07-26T16:39:18.881     84.2257     -153.358     74.8543     -11.8038     171.059     196.506     173.248     241.456      -2.8986     -0.86979      -27.778      -2.8985      -7.6473      -26.714       30.577
+2007-07-26T16:40:55.052     25.0029     -341.047     52.1237     19.791     345.575     37.1368     41.9216     121.954     -0.34711       7.3359      -16.258     -0.34707       3.1511      -17.556       18.137
+2007-07-26T16:42:31.223     89.2308     -129.432     92.4046     -14.7533     159.715     192.55     202.581     131.723      -4.4777       9.6859      -33.141      -4.4776       1.3726      -34.501       35.174
+2007-07-26T16:44:07.395     75.6347     -82.9875     73.0716     -27.9849     114.059     190.572     177.292     135.632      -9.0302       17.144      -41.535      -9.0301       6.6341       -44.44       46.216
+2007-07-26T16:45:43.568     72.1728     -90.6443     85.0102     -23.6168     126.495     218.272     210.289     142.693      -10.912       26.074      -35.302      -10.912       16.859      -40.519        45.44
+2007-07-26T16:47:19.739     80.0351     -114.111     82.2601     -16.1806     141.597     213.534     217.727     173.265      -9.3395       30.013      -15.765      -9.3395        25.39      -22.458       36.589
+2007-07-26T16:48:55.911     81.4586     -107.715     74.1851     -17.802     131.995     208.946     203.123     149.363      -5.9816        30.92       7.2153      -5.9816       31.746     -0.31082       33.356
+2007-07-26T16:50:32.082     64.6718     -80.6149     78.4418     -26.8497     115.641     201.912     212.969     145.112      -0.5218       25.072       26.788     -0.52186        30.67       20.129       39.997
+2007-07-26T16:52:08.253     65.4588     -90.3281     92.2276     -29.0428     132.32     213.323     230.981     148.719       7.1356       1.0281       39.492       7.1356       10.243       38.153       40.378
+2007-07-26T16:53:44.426     62.6942     -87.2208     96.105     -22.5402     131.726     209.558     212.821     143.691        7.887     -0.85345       41.928       7.8869       8.9268       40.975       42.867
+2007-07-26T16:55:20.598     60.7492     -109.275     91.1493     -15.1038     143.099     174.853     202.087     138.544       6.3449         2.53       41.154       6.3448       11.983       39.453       42.282
+2007-07-26T16:56:56.769     65.4191     -98.3304     86.3163     -16.7735     131.912     197.797     207.373     132.306       6.4298      -3.3328       38.042       6.4298       5.5048       37.787       39.259
+2007-07-26T16:58:32.940     61.4516     -90.0703     84.045     -27.3711     126.196     196.813     192.561     122.913       7.5534      -4.8588       44.259       7.5533       5.3872       44.198       45.462
